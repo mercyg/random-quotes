@@ -10,7 +10,7 @@
     var qutote;
      var quoteslink;
     function getQuotes() {
-        $.get("https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en", function (data) {
+        $.get("http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en", function (data) {
             // console.log(data.quoteText);
              autor = data.quoteAuthor
              qutote = data.quoteText;
