@@ -11,7 +11,7 @@
     var qutote;
      var quoteslink;
     function getQuotes() {
-        $.get("https://crossorigin.me/http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en", function (data) {
+        $.get("https://cors-anywhere.herokuapp.com/http://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en", function (data) {
             console.log(data.quoteAuthor);
              autor = data.quoteAuthor;
              //console.log(autor)
